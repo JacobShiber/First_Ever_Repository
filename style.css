@@ -1,0 +1,69 @@
+body {
+    background-color: tomato;
+}
+div {
+    display: inline-flex;
+}
+#redbox {
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    /* transition: background 3s, width 3s, height 2s; */
+    
+}
+#redbox:hover + #yellowbox {
+    background-color: green;
+    width: 712px;
+    /* height: 450px; */
+}
+#yellowbox {
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    transition: background 3s, width 3s 2s linear;
+}
+
+#bluetext {
+    color: blue;
+}
+#yellowtext {
+    color: yellow;
+}
+.divbox {
+    width: 200px;
+    height: 300px;
+    background: url(./Media/ygocard.jpeg);
+    background-size: 200px 300px;
+    background-repeat: no-repeat;
+    transition: 1.5s;
+}
+.divbox:first-child:hover {
+    background: url(./Media/kratos.gif);
+    background-size: 200px 300px;
+    background-repeat: no-repeat;
+    transform: rotate(-45deg);
+}
+.divbox:nth-child(2):hover{
+    background: url(./Media/slifer.gif);
+    background-size: 200px 300px;
+    background-repeat: no-repeat;
+    transform: translate(20px, 30px);
+}
+.divbox:nth-child(3):hover{
+    background: url(./Media/trunks.gif);
+    background-size: 200px 300px;
+    background-repeat: no-repeat;
+    transform: rotateX(30deg);
+}
+.divbox:nth-child(4):hover{
+    background: url(./Media/whitedragon.gif);
+    background-size: 200px 300px;
+    background-repeat: no-repeat;
+    transform: rotateY(60deg);
+}
+.divbox:nth-child(5):hover{
+    background: url(./Media/darkmagic.gif);
+    background-size: 200px 300px;
+    background-repeat: no-repeat;
+    transform: rotateZ(40deg);
+}
